@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:backgroundTintMode="add"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".counter.LeaderBoardFragment">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/menuicon"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        app:layout_constraintEnd_toStartOf="@id/textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="LEADERBOARD"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/giftbox"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="45sp"
+        android:layout_marginRight="30sp"
+        android:src="@drawable/https___lottiefiles_com_animations_gift_box_animation_uyfmxovjc7"
+        app:layout_constraintStart_toEndOf="@id/textview"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:background="#C6C4C4"
+        android:layout_height="2dp"
+        android:visibility="visible"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/imageview"
+        />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="117dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="30sp"
+            android:src="@drawable/headtop"
+            app:layout_constraintStart_toStartOf="@id/girlimg" />
+
+        <ImageView
+            android:layout_width="104dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/rectangle_16179" />
+
+        <ImageView
+            android:id="@+id/ellipsse"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45sp"
+            android:background="@drawable/ellipse_31"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <ImageView
+            android:id="@+id/girlimg"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45sp"
+            android:src="@drawable/girlimg"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="190dp"
+            android:paddingLeft="20sp"
+            android:textColor="@color/black"
+            android:text="Elizabeth 1266"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/badge" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/framelayout2"
+        android:layout_width="117dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="120sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintRight_toRightOf="@id/framelayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="30sp"
+            android:src="@drawable/head2"
+            app:layout_constraintStart_toStartOf="@id/girlimg" />
+
+        <ImageView
+            android:layout_width="104dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/rectangle_2" />
+
+        <ImageView
+            android:id="@+id/ellipsse2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45sp"
+            android:background="@drawable/ellipse_2"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/boyimg"
+            app:roundPercent="1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45sp"
+            android:src="@drawable/handsome_young_sportsman_holding_bottle_with_water_3"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10sp"
+            android:paddingLeft="10sp"
+            android:layout_marginTop="190dp"
+            android:text="Jerk william 1457"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/badge_2" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/framelayout3"
+        android:layout_width="117dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="230sp"
+        android:layout_marginTop="60sp"
+        app:layout_constraintRight_toRightOf="@id/framelayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="30sp"
+            android:src="@drawable/head3"
+            app:layout_constraintStart_toStartOf="@id/girlimg" />
+
+        <ImageView
+            android:layout_width="104dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/rectangle_3" />
+
+        <ImageView
+            android:id="@+id/ellipsse3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45sp"
+            android:background="@drawable/ellipse_3"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <ImageView
+            android:id="@+id/gymboyimg"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45sp"
+            android:src="@drawable/boygym"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10sp"
+            android:paddingLeft="0sp"
+            android:layout_marginTop="190dp"
+            android:text="Anderson  1347"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/badge_3" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewleaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        tools:listitem="@layout/listitem"
+        android:layout_marginStart="25sp"
+        android:background="@drawable/view_bg"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="25sp"
+        app:layout_constraintStart_toStartOf="@id/framelayout"
+        app:layout_constraintTop_toBottomOf="@id/framelayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

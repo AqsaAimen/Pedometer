@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/counterFragment">
+
+    <fragment
+        android:id="@+id/counterFragment"
+        android:name="com.example.pedometerapp2.counter.CounterFragment"
+        android:label="fragment_counter"
+        tools:layout="@layout/fragment_counter" >
+
+        <action
+            android:id="@+id/action_counterFragment_to_leaderBoardFragment"
+            app:destination="@id/leaderBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapRunnerFragment"
+        android:name="com.example.pedometerapp2.counter.MapRunnerFragment"
+        android:label="fragment_map_runner"
+        tools:layout="@layout/fragment_map_runner" />
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="com.example.pedometerapp2.counter.PlanFragment"
+        android:label="fragment_plan"
+        tools:layout="@layout/fragment_plan" />
+    <fragment
+        android:id="@+id/leaderBoardFragment"
+        android:name="com.example.pedometerapp2.counter.LeaderBoardFragment"
+        android:label="fragment_leader_board"
+        tools:layout="@layout/fragment_leader_board" >
+        <action
+            android:id="@+id/action_leaderBoardFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.pedometerapp2.counter.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_achievementsFragment"
+            app:destination="@id/achievementsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_badgesFragment"
+            app:destination="@id/badgesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_remainderFragment"
+            app:destination="@id/remainderFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/achievementsFragment"
+        android:name="com.example.pedometerapp2.counter.AchievementsFragment"
+        android:label="fragment_achievements"
+        tools:layout="@layout/fragment_achievements" />
+    <fragment
+        android:id="@+id/badgesFragment"
+        android:name="com.example.pedometerapp2.counter.BadgesFragment"
+        android:label="fragment_badges"
+        tools:layout="@layout/fragment_badges" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.pedometerapp2.counter.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/remainderFragment"
+        android:name="com.example.pedometerapp2.counter.RemainderFragment"
+        android:label="fragment_remainder"
+        tools:layout="@layout/fragment_remainder" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.pedometerapp2.counter.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+</navigation>

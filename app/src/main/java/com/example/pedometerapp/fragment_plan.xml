@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTintMode="add"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".counter.PlanFragment">
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/menuicon"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        app:layout_constraintEnd_toStartOf="@id/textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="PLANS"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/giftbox"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="75sp"
+        android:layout_marginRight="30sp"
+        android:src="@drawable/https___lottiefiles_com_animations_gift_box_animation_uyfmxovjc7"
+        app:layout_constraintStart_toEndOf="@id/textview"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:background="#C6C4C4"
+        android:layout_height="2dp"
+        android:visibility="visible"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/imageview"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/view_bg"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Easy Walk "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/manwalking"
+        app:layout_constraintStart_toEndOf="@id/manwalking" />
+
+    <TextView
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8sp"
+        android:text="Efficiently track your every stride with this running module"
+        android:textColor="#A3A0A0"
+        android:textStyle="normal"
+        android:textSize="13dp"
+        android:layout_marginBottom="15sp"
+        app:layout_constraintStart_toStartOf="@id/textview1"
+        app:layout_constraintTop_toBottomOf="@id/textview1" />
+
+    <ImageView
+        android:id="@+id/backgroundimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plans_shape"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintTop_toTopOf="@id/view2"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        />
+
+    <ImageView
+        android:id="@+id/manwalking"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:paddingLeft="0sp"
+        android:paddingTop="1sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/manwalking"
+        app:layout_constraintStart_toStartOf="@id/backgroundimg"
+        app:layout_constraintTop_toTopOf="@id/backgroundimg" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/view_bg"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=" Running "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/manrunning"
+        app:layout_constraintStart_toEndOf="@id/manrunning" />
+    <TextView
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8sp"
+        android:text="Efficiently track your every stride with this running module"
+        android:textColor="#A3A0A0"
+        android:textStyle="normal"
+        android:textSize="13dp"
+        android:layout_marginBottom="15sp"
+        app:layout_constraintStart_toStartOf="@id/textview2"
+        app:layout_constraintTop_toBottomOf="@id/textview2" />
+    <ImageView
+        android:id="@+id/backgroundimg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_plans_shape"
+        app:layout_constraintBottom_toBottomOf="@id/view3"
+        app:layout_constraintTop_toTopOf="@id/view3"
+        app:layout_constraintStart_toStartOf="@id/view3"
+        />
+
+    <ImageView
+        android:id="@+id/manrunning"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:paddingLeft="0sp"
+        android:paddingTop="1sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/manrunning"
+        app:layout_constraintStart_toStartOf="@id/backgroundimg2"
+        app:layout_constraintTop_toTopOf="@id/backgroundimg2" />
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/view_bg"
+        app:layout_constraintStart_toStartOf="@id/view3"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=" Cycling "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/mancycling"
+        app:layout_constraintStart_toEndOf="@id/mancycling" />
+
+    <TextView
+
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Efficiently track your every stride with this running module"
+        android:textColor="#A3A0A0"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/textview3"
+        app:layout_constraintTop_toBottomOf="@id/textview3" />
+
+    <ImageView
+        android:id="@+id/backgroundimg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/ic_plans_shape"
+        app:layout_constraintBottom_toBottomOf="@id/view4"
+        app:layout_constraintEnd_toEndOf="@id/view4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/view4" />
+
+    <ImageView
+        android:id="@+id/mancycling"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:paddingTop="1dp"
+        android:src="@drawable/mancycling"
+        app:layout_constraintStart_toStartOf="@id/backgroundimg3"
+        app:layout_constraintTop_toTopOf="@id/backgroundimg3" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/view_bg"
+        app:layout_constraintStart_toStartOf="@id/view4"
+        app:layout_constraintTop_toBottomOf="@id/view4" />
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=" Hiking "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/manhicking"
+        app:layout_constraintStart_toEndOf="@id/manhicking" />
+
+    <TextView
+
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8sp"
+        android:text="Efficiently track your every stride with this running module"
+        android:textColor="#A3A0A0"
+        android:textStyle="normal"
+        android:textSize="13dp"
+        android:layout_marginBottom="15sp"
+        app:layout_constraintStart_toStartOf="@id/textview4"
+        app:layout_constraintTop_toBottomOf="@id/textview4" />
+
+    <ImageView
+        android:id="@+id/backgroundimg4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/ic_plans_shape"
+        app:layout_constraintBottom_toBottomOf="@id/view5"
+        app:layout_constraintEnd_toEndOf="@id/view5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/view5" />
+
+    <ImageView
+        android:id="@+id/manhicking"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:paddingLeft="0sp"
+        android:src="@drawable/manhicking"
+        app:layout_constraintStart_toStartOf="@id/backgroundimg4"
+        app:layout_constraintTop_toTopOf="@id/backgroundimg4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
